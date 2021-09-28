@@ -13,11 +13,11 @@ Product.init(
       type: DataTypes.INTEGER,
       allowNull: false,
       primaryKey: true,
-      autoIncrement: true,
+      autoIncrement: true
     },
     product_name: {
       type: DataTypes.STRING,
-      allowNull: false,
+      allowNull: false
     },
     price: {
       type: DataTypes.DECIMAL,
@@ -39,7 +39,7 @@ Product.init(
       references: {
         model: 'category',
         key: 'id',
-      },
+      }
     }
   },
   {
@@ -47,7 +47,7 @@ Product.init(
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'product',
+    modelName: 'product'
   }
 );
 
